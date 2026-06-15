@@ -144,6 +144,12 @@ The observed module is Tuya WB3S. Tuya's module selection page identifies WB3S
 as a BK7231T-based Wi-Fi/Bluetooth module. Community firmware work should be
 approached as BK7231T work, not ESP8266 work.
 
+The FCC filing for `2ANDL-WB3S` includes module photos that match the WB3S module
+style observed in this unit:
+
+![WB3S FCC top-side reference image](assets/fcc/wb3s-fcc-top.png)
+![WB3S FCC bottom-side reference image](assets/fcc/wb3s-fcc-bottom.png)
+
 Practical notes:
 
 - Use a 3.3 V UART adapter only. Do not connect a 5 V serial adapter.
@@ -225,8 +231,16 @@ The compliance trail is fragmented:
 - Amazon names Shenzhen Tuya Cloud Technology Co.,Ltd as manufacturer.
 - The MOES declaration PDF names Wenzhou Morning Electronics Co., LTD.
 - Some manual versions name Wenzhou/Yueqing Nova entities.
-- I did not find a separate final-product FCC ID on the physical label. The WB3S
-  module family has module-level FCC documentation.
+- I did not find a separate final-product FCC ID on the physical label. I also
+  did not see an integrator-style `Contains FCC ID: 2ANDL-WB3S` statement on the
+  outside label. Given the visible WB3S radio module, I would expect either a
+  final-product FCC ID or a "Contains FCC ID" module reference somewhere in the
+  product labeling or documentation.
+- In absence of that final-product label evidence, there is at least an
+  apparently matching related FCC modular approval: `FCC ID 2ANDL-WB3S`, a
+  Hangzhou Tuya Information Technology Co.,Ltd Wi-Fi and Bluetooth Module filing
+  with user manual, internal photos, external photos, label, RF exposure, and
+  test-report exhibits.
 
 ## Open Questions
 
@@ -247,6 +261,11 @@ The compliance trail is fragmented:
 - [Amazon quick setup PDF](https://m.media-amazon.com/images/I/81R5HTP83AL.pdf)
 - [Amazon voice assistant setup PDF](https://m.media-amazon.com/images/I/91dD6DWaSLL.pdf)
 - [MOES app redirect page](https://a.smart321.com/moeswz)
+- [FCC ID 2ANDL-WB3S: Tuya WB3S Wi-Fi and Bluetooth Module](https://fccid.io/2ANDLWB3S)
+- [FCC WB3S user manual exhibit](https://fccid.io/2ANDL-WB3S/User-Manual/User-manual-4580793)
+- [FCC WB3S internal photos exhibit](https://fccid.io/2ANDL-WB3S/Internal-Photos/Internal-photos-4580783)
+- [FCC WB3S external photos exhibit](https://fccid.io/2ANDL-WB3S/External-Photos/External-photos-4580780)
+- [FCC WB3S label exhibit](https://fccid.io/2ANDL-WB3S/Label/Label-4580781)
 - [Tuya Developer module selection, including WB3S](https://developer.tuya.com/en/docs/iot/product-hardware-module-selection?id=K9tp14pwa3pxw)
 - [LibreTiny WB3S board notes](https://docs.libretiny.eu/boards/wb3s/)
 - [Blakadder MOES UFO-R6 community template/replacement note](https://templates.blakadder.com/moes_UFO-R6.html)
@@ -258,3 +277,5 @@ The compliance trail is fragmented:
 - [02-open-housing-and-pcb.jpg](assets/photos/02-open-housing-and-pcb.jpg) - opened shell, smoked dome, PCB placement.
 - [03-pcb-top-wb3s-ir-emitters.jpg](assets/photos/03-pcb-top-wb3s-ir-emitters.jpg) - WB3S module, emitter ring, learner, pads.
 - [04-pcb-bottom-power-drivers.jpg](assets/photos/04-pcb-bottom-power-drivers.jpg) - USB input, power area, drivers, test pads.
+- [wb3s-fcc-top.png](assets/fcc/wb3s-fcc-top.png) - WB3S top-side reference image from the FCC exhibit set.
+- [wb3s-fcc-bottom.png](assets/fcc/wb3s-fcc-bottom.png) - WB3S bottom-side reference image from the FCC exhibit set.

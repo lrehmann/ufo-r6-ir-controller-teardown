@@ -32,6 +32,36 @@ declaration PDF names Wenzhou Morning Electronics Co., LTD. Some manual versions
 use MOES/MoesGo and Wenzhou/Yueqing Nova text. Treat this as a Tuya/OEM
 white-label product rather than a single clean brand identity.
 
+## MAC/OUI Lookup
+
+The printed device MAC address starts with `18:DE:50`. The per-device suffix is
+unique to the sample, but the first three octets are the reusable vendor/OUI
+evidence.
+
+IEEE's public OUI/MA-L registry lists:
+
+| Field | Value |
+| --- | --- |
+| OUI / MA-L prefix | `18-DE-50` |
+| Base-16 form | `18DE50` |
+| Registered organization | Tuya Smart Inc. |
+| Address | 160 Greentree Drive, Suite 101, Dover, DE 19904, US |
+
+Third-party OUI databases report the same vendor and add useful decoded details:
+
+| Field | Value |
+| --- | --- |
+| Colon form | `18:DE:50` |
+| Address range | `18:DE:50:00:00:00` through `18:DE:50:FF:FF:FF` |
+| Assignment type | IEEE MA-L / Mac Address Block Large |
+| Block size | 2^24 addresses, about 16.7 million |
+| Initial registration date | 2023-03-15 |
+| Address type | Universally administered unicast addresses |
+
+This aligns with the physical WB3S/Tuya module finding and is another indication
+that the UFO-R6 sample is using Tuya platform hardware even though the retail
+branding varies.
+
 ## Claimed Specifications
 
 The MOES compliance page, MOESHouse product page, and manual family agree on the
@@ -269,7 +299,9 @@ The compliance trail is fragmented:
 - [Tuya Developer module selection, including WB3S](https://developer.tuya.com/en/docs/iot/product-hardware-module-selection?id=K9tp14pwa3pxw)
 - [LibreTiny WB3S board notes](https://docs.libretiny.eu/boards/wb3s/)
 - [Blakadder MOES UFO-R6 community template/replacement note](https://templates.blakadder.com/moes_UFO-R6.html)
+- [IEEE public OUI/MA-L registry text file](https://standards-oui.ieee.org/oui/oui.txt)
 - [MAC lookup for OUI 18:DE:50](https://maclookup.app/macaddress/18de50)
+- [MAC lookup details for OUI 18:DE:50](https://maclookup.app/macaddress/18de50/mac-address-details)
 
 ## Photo Index
 
